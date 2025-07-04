@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>emperor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="main" class="menu">
+        <h1>امپراطور</h1>
+        <button id="search">جستجو حریف</button>
+    </div>
+
+    <div id="wait" class="menu">
+        <h1>waiting for player...</h1>
+    </div>
+
+    <div id="game" class="menu">
+        <div id="info-enemy" class="info">
+            <div>
+                <span>امتیاز:</span>
+                <span id="score-enemy">0</span>
+            </div>
+            <div id="name-enemy">حریف</div>
+        </div>
+        <div id="deck-enemy" class="deck">
+            <div class ='card'></div>
+            <div class ='card'></div>
+            <div class ='card'></div>
+            <div class ='card'></div>
+            <div class ='card'></div>
+        </div>
+        <div id="board-game">
+            <div id="active-card-enemy" class ='card'></div>
+            <div id="active-card-me" class ='card'></div>
+        </div>
+        <div id="deck-me" class="deck">
+
+        </div>
+        <div id="info-me" class="info">
+            <div>
+                <span>امتیاز:</span>
+                <span id="score-me">0</span>
+            </div>
+            <div id="name-me">خودم</div>
+        </div>
+    </div>
+
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+    <script src="client.js"></script>
+</body>
+</html>
