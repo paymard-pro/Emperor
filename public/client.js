@@ -1,4 +1,4 @@
-const socket = io('http://192.168.1.3:3000');
+const socket = io('https://emperor-u36m.onrender.com');
 //
 let searchbtn = document.getElementById('search');
 let mainMenu = document.getElementById('main');
